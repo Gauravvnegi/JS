@@ -430,28 +430,84 @@
 // console.log(obj)
 
 //---------------------------------------------------------------------------call----apply---bind
-const obj1 = {
-  name : "Gaurav",
-  age : 12,
-//   displayName : function(){
-//     console.log(this.name  , this.age);
+// const obj1 = {
+//   name : "Gaurav",
+//   age : 12,
+// //   displayName : function(){
+// //     console.log(this.name  , this.age);
+// // }
 // }
-}
-let displayName = function(sate , city  ){
-    console.log(this.name  , this.age , sate , city);
-}
+// let displayName = function(sate , city  ){
+//     console.log(this.name  , this.age , sate , city);
+// }
 
-const obj2 ={
-  name:"Sagar",
-  age:13
-}
-// displayName.call(obj1);
-// displayName.call(obj2)
-// obj1.displayName.call(obj1);
-// obj1.displayName.call(obj2)
-// displayName.apply(obj1 ,["hal","city"])
-const anotherBoundFunction = displayName.bind(obj1, "Hello", "another city");
-anotherBoundFunction();
+// const obj2 ={
+//   name:"Sagar",
+//   age:13
+// }
+// // displayName.call(obj1);
+// // displayName.call(obj2)
+// // obj1.displayName.call(obj1);
+// // obj1.displayName.call(obj2)
+// // displayName.apply(obj1 ,["hal","city"])
+// const anotherBoundFunction = displayName.bind(obj1, "Hello", "another city");
+// anotherBoundFunction();
+// let key = "ADDRESS"
+// const obj ={
+//   name:"Gaurav",
+//   age:23,
+//   add:{
+//     city:"Haldwani"
+//   },
+//   ['Pin Code'] : 12345892739,
+//   [key] : 'asdnfkjasd laskdjdflkasdjf sdjfla sd'
+// }
+// // delete obj.age;
+
+// obj['Pin Code'] = 12133
+// console.log(obj);
+// console.log(obj['Pin Code']);
+// const obj2 = new Object();
+
+// obj.name = "Gaurav"
+// obj2.name="Sagar"
+// console.log(obj);
+
+// console.log(obj2);
 
 
+// for(const item in obj) {
+//   console.log(obj[item]);
+// }
 
+// const sal ={
+//   one:100,
+//   two:200,
+//   three:300,
+//   four:400,
+//   five:500,
+//   six:600,
+// }
+// let sum=0;
+// for(const item in sal) {
+//   sum+=sal[item];
+//   // .log(saconsolel[item]);
+// }
+// console.log(sum);
+
+// var one=0;
+// var one ="asdfasd"
+// console.log(one)
+// let one=0;
+//  one ="asdfasd"
+// console.log(one)
+// const one=0;
+// //  one ="asdfasd"
+// console.log(one)
+
+// for (const item in sal){
+//   if(sal.hasOwnProperty(item)){
+//     sum+=sal[item];
+//   }
+// }
+// console.log(`Sal is ${sum}`);
